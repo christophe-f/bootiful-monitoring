@@ -8,6 +8,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>api-gateway</module>
+        <module>customer-service</module>
         <module>order-service</module>
     </modules>
 </project>

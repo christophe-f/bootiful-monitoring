@@ -4,10 +4,14 @@ spring:
   sleuth:
     sampler:
       probability: 1.0
+  cloud:
+    consul:
+      host: cbt-consul.apps.stg.azr-use2-pcf.cloud.bns
+      port: 8080
+      scheme: http
 
 management:
   endpoints:
     web:
       exposure:
         include: "*"
-

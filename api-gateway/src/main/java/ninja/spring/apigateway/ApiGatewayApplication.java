@@ -16,6 +16,8 @@ public class ApiGatewayApplication {
         return builder.routes()
                 .route("order-service", r -> r.path("/orders")
                         .uri("http://order-service/orders"))
+                .route("customer-service", r -> r.path("/customers")
+                        .uri("lb://customer-service/customers"))
                 .route("default_path_to_httpbin", r -> r.path("/**")
                         .uri("https://httpbin.org/uuid"))
                 .build();
